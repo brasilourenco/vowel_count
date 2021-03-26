@@ -1,7 +1,10 @@
-function getCount(str) {
-  var vowelsCount = 0;
+var EvenOrOdd = function(2) {
+  var resto = EvenOrOdd %2;
 
-a + b
+  if (resto == 0) {
+    return EvenOrOdd;
 
-  return vowelsCount;
+  } else {
+    break;
+  }
 }
