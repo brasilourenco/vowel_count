@@ -1,10 +1,5 @@
-var EvenOrOdd = function(2) {
-  var resto = EvenOrOdd %2;
-
-  if (resto == 0) {
-    return EvenOrOdd;
-
-  } else {
-    break;
-  }
-}
+var even_or_odd = function(number) {
+  if (number%2 ===0)
+return "Odd";
+else
+  return "Even";}
