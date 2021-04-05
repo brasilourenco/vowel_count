@@ -1,7 +1,12 @@
 var mouthSize = function(animal) {
-  if (animal == 'alligator') {
-    console.log(animal.toLowerCase());
+  if (animal.toLowerCase() == 'alligator') {
+    return 'small';
 } else {
-    console.log(animal.toUpperCase());
+    return 'wide';
   }
 }
+
+console.log(mouthSize('Alligator'))
+console.log(mouthSize('dog'))
+console.log(mouthSize('cat'))
+console.log(mouthSize('donkey'))
