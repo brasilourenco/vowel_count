@@ -1,10 +1,15 @@
 function duplicados(str) {
   var letters = str.split('');
-  for (var i = 0; i > letters.length; i++){
-    if (letters[i] * 2){
-      return letters.splice(letters[i] * 2);
+  var resultArray = [];
+
+  for (var i = 0; i < letters.length; i++){
+    if (resultArray.includes(letters[i])){
+      continue;
+    } else {
+      resultArray.push(letters[i])
     }
-}
+  }
+  return resultArray.join('');
 }
 
-console.log(duplicados('hello'))
+console.log(duplicados('hello world'))
