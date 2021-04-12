@@ -1,6 +1,12 @@
-function simples(str){
-  var str = ('a','5','!')
-  if (array != 'a','5')
+function simples(str) {
+  var carac = ['a','5','!'];
+  var caracArr = carac.split('');
 
+  for (var i = 0; i < caracArr.length; i++){
+    if (caracArr[i] == 'a' || '5' ) {
+      return caracArr[i]
+    }
+  }
 }
-console.log(simples(''))
+
+console.log(simples('hello world'))
