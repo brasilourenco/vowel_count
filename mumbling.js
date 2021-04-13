@@ -1,9 +1,11 @@
-function accum(str) {
-  var letters = ['abcd']
-  var lettersArr = str.split('');
+function accum(s) {
+  var arr = s.split('');
+  var result = [];
+  console.log(arr);
 
-  var i;
-  for (i = 0; i < lettersArr.length; i++){
-
+  for(var i = 0; i < arr.length; i++){
+    result.push(arr[i].repeat(i+1));
+    }
+    return result;
   }
-}
+console.log(accum('abCd'));

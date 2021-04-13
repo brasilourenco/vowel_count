@@ -2,7 +2,7 @@ function highAndLow(numbers){
   var numbersArr = numbers.split(' ')
   var high = parseInt(numbersArr[0]);
   var low  = parseInt(numbersArr[0]);
-  //console.log(numbersArr)
+  console.log(numbersArr)
 
   for(var i = 0; i < numbersArr.length; i++){
     if (parseInt(numbersArr[i]) > high){
