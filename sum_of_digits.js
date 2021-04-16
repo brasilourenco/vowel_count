@@ -1,14 +1,17 @@
 function digital_root(n) {
   var str =  n.toString();
   var arrays = str.split('');
-  var num = parseInt(arrays);
+
   var result = 0;
-  console.log(num);
 
  for(var i = 0; i < arrays.length; i++){
-   result = result + arrays[i];
+   result = result + parseInt(arrays[i]);
 }
 
+  if (result >= 10){
+    return digital_root(result);
+  }
+ return result;
 }
 
-console.log(digital_root(12))
+console.log(digital_root(335));
